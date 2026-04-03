@@ -48,9 +48,10 @@ body {
 .items .addCart {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     text-decoration: none;
     background-color: #fff;
-    width: fit-content;
+    width: 60%;
     margin: 0 auto;
     padding: 10px 25px;
     border: 1.9px solid hsl(14, 25%, 72%);
@@ -63,7 +64,44 @@ body {
 
 .items .addCart.active {
     background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border: 1.9px solid hsl(14, 25%, 72%);
+    border-radius: 40px;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    z-index: 1000;
 }
+
+.items .Add-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: crimson;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border: 1.9px solid hsl(14, 25%, 72%);
+    border-radius: 40px;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.items .Add-quantity p{
+    margin: 0;
+}
+/* .items .addCart.active .info-quantity{
+    margin: 0;
+} */
 
 .items a svg {
     margin-right: 8px;

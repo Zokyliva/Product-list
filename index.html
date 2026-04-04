@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/animate.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/style.css">
 
 
   <title>Frontend Mentor | Product list with cart</title>
@@ -16,19 +16,20 @@
 
 <body>
 
-  <div class="container1">
-    <div class="tous-items-dessert">
+  <div class="container1 grid lg:grid-cols-4 gap-4">
+    <div class="tous-items-dessert col-span-3">
 
       <div class="titre1">
         <h1>Desserts</h1>
+        <span>Heriniaina Olivier</span>
       </div>
-      <div class="tous-items">
+      <div class="tous-items grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         <!-- List of items -->
       </div>
     </div>
 
     <!-- This is the cart which we add our purchase -->
-    <div class="cart">
+    <div class="cart col-span-1 sticky top-0 h-screen overflow-auto">
       <div class="cart-item">
         <h1>Your cart (<span class="number-quantity">0</span>)</h1>
 
